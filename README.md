@@ -34,3 +34,9 @@ If you have an idea, even if you think it is useless, open an issue and share it
 
 If and when you come up with ideas, see if you can't try something out and create a pull request. Remember that we can always tweak or add things to branches before we merge them, even if you have only started.
 
+## Building
+
+Large C++ libraries like this one is bound to be are quite redundant and boring to build, even just for a small test, because each class will have it's own definition and implementation files that need to be built into object files before a single shared/static library can be created. To solve this issue with our project, we use Bazel, the open-source component of Google's C++ build system.
+
+Documentation on how to use it will be put in `CONTRIBUTING.md`, whenever that gets created.
+
